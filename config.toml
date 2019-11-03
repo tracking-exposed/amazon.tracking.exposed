@@ -15,11 +15,18 @@ canonifyURLs = true
 
 [menu]
  [[menu.main]]
-    page = ""
+    page = "Tracking Exposed"
+    identifier = "trex"
+    name = "Umbrella project: Tracking Exposed"
+    url = "https://tracking.exposed"
+    weight = 90
+
+
     identifier = "about"
     name = "About"
     url = "/about/"
     weight = 20
+
  [[menu.main]]
     page = "Project analysis"
     identifier = "background"
@@ -49,10 +56,3 @@ canonifyURLs = true
     weight = -80
     pre = "/images/pov.svg"
     post = "See through our POV and play hard with our pleasure tools"
-
-[[menu.footer]]
-   page = "Tracking Exposed"
-   identifier = "trex"
-   name = "Umbrella project: Tracking Exposed"
-   url = "https://tracking.exposed"
-   weight = 90
