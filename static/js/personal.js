@@ -17,6 +17,7 @@ function personal(pages, profile) {
     const pk = getPubKey();
     const url = buildApiUrl('personal', pk + '/' + pagestr); // `/personal/${pk}/`);
     $.getJSON(url, (data) => {
+        console.log(data);
         _.each(data.recent, addVideoRow);
         addPages(data.total, pagestr);
         if(!profile) updateProfileInfo(data.supporter);
@@ -175,28 +176,15 @@ function addPages(total, pages) {
 }
 
 function addVideoRow(video) {
+    console.log(video);
     const entry = $("#master").clone();
     const computedId = `video-${video.id}`;
+    console.log(computedId);
     entry.attr("id", computedId);
     $("#report").append(entry);
 
-    $("#" + computedId + " .compare").attr('href', `/compare/#${video.videoId}`);
-    let title = $("#" + computedId + " .compare").attr('title') + "«" + video.title + "»";
-    $("#" + computedId + " .compare").attr('title', title);
-
-    $("#" + computedId + " .related").attr('href', `/related/#${video.videoId}`);
-    title = $("#" + computedId + " .related").attr('title')  + "«" + video.title + "»";
-    $("#" + computedId + " .related").attr('title', title);
-
-    $("#" + computedId + " .author").attr('href', `/author/#${video.videoId}`);
-
-    $("#" + computedId + " .delete").on('click', removeEvidence);
-    $("#" + computedId + " .delete").attr('yttrex-id', `${video.id}`);
-    title = $("#" + computedId + " .delete").attr('title')  + "«" + video.title + "»";
-    $("#" + computedId + " .delete").attr('title', title);
-
     $("#" + computedId + " .relative").text(video.relative);
-    $("#" + computedId + " .title").text(video.title);
+    $("#" + computedId + " .productName").text(video.productName);
 
     entry.removeAttr('hidden');
 }
