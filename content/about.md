@@ -11,8 +11,7 @@ og_description: "A tool to analyze personalized experiences in the biggest retai
 ---
 
 
-## We operate to expose how tracking and profiling from user data had a negative impact on society so that proper political and civil acti
-ons can be taken.
+## We operate to expose how tracking and profiling from user data had a negative impact on society so that proper political and civil actions can be taken.
 
 Read our [manifesto](https://tracking.exposed/manifesto). 
 
@@ -20,6 +19,12 @@ This declination (amazon) of tracking.exposed is currently maintain by [Claudio 
 
 For general inquiry and support, please refer to *support at tracking dot exposed*
 
-## This tool is not yet ready for general use. It is usable only by researchers.
+## This tool can't be sustained at the current capacity. 
 
-Our goal is to make this prototype an accessible tool, we lack of resources. As free software team we welcome contributions, and as contributors we welcome people sharing the manifesto.
+Our goal is to make this prototype an accessible tool, but we lack of the necessary resources.
+As a free software team, we welcome a variety of contributions. As contributors, we welcome people sharing the manifesto.
+
+## Code (AGPL-3)
+
+* [amtrex](https://github.com/tracking-exposed/amtrex): extension and backend (javascript)
+* [amazon.tracking.exposed](https://github.com/tracking-exposed/amazon.tracking.exposed): website (hugo)
