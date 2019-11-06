@@ -21,10 +21,10 @@ canonifyURLs = true
     url = "https://tracking.exposed"
     weight = 90
 
-
  [[menu.featured]]
     identifier = "about"
     name = "About"
     url = "/about/"
+    pre = "/images/amazon-spy-wired.png"
     weight = 20
     post = "This prototype works but is undocumented and supposedly only for researchers. It is not yet suitable for general use."

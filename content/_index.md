@@ -15,3 +15,9 @@ og_description: "Amazon personalize the shopping experience, by comparing how cu
 Our goal is to make this prototype an accessible tool, we lack of resources. As free software team we welcome contributions, and as contributors we welcome people sharing the manifesto.
 
 For general inquiry and support, please refer to *support at tracking dot exposed*
+
+<smaller>
+    Illustration above cribbed from <a href="https://www.wired.com/story/amazon-marketplace-apps-privacy/" target=_blank>
+        wired.com
+    </a>.
+</smaller>
