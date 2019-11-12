@@ -1,6 +1,5 @@
 /* functions used in 'personal' visualization */
 
-
 function getPubKey() {
     const t = window.location.href.split('/#').pop();
     if(t.length != 44 ) console.log("Wrong token length in the URL", t.length);
@@ -17,8 +16,7 @@ function personal(pages, profile) {
     const pk = getPubKey();
     const url = buildApiUrl('personal', pk + '/' + pagestr); // `/personal/${pk}/`);
     $.getJSON(url, (data) => {
-        console.log(data);
-        _.each(data.recent, addVideoRow);
+        _.each(data.recent, addProductRow);
         addPages(data.total, pagestr);
         if(!profile) updateProfileInfo(data.supporter);
     });
@@ -175,16 +173,21 @@ function addPages(total, pages) {
     }
 }
 
-function addVideoRow(video) {
-    console.log(video);
+function addProductRow(video, i) {
     const entry = $("#master").clone();
     const computedId = `video-${video.id}`;
-    console.log(computedId);
+
     entry.attr("id", computedId);
     $("#report").append(entry);
 
+    $("#" + computedId + " .compare").attr('href', `/compare/#${video.productId}`);
+    let title = $("#" + computedId + " .compare").attr('title') + "«" + video.productName+ "»";
+    $("#" + computedId + " .compare").attr('title', title);
     $("#" + computedId + " .relative").text(video.relative);
     $("#" + computedId + " .productName").text(video.productName);
+    $("#" + computedId + " .productName").attr('href', "https://www.amazon.com/dp/" + video.productId);
+    $("#" + computedId + " .order").text(`${i+ 1}`);
+    $("#" + computedId + " .categories").html(video.sections.join('<br>'));
 
     entry.removeAttr('hidden');
 }

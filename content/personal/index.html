@@ -26,14 +26,26 @@ type: app
 
         <!-- NOTE: this is hidden, and it is cloned from javascript, each time a new entry is present -->
         <div id="master" hidden class="row border-bottom p-2 mb-3 align-middle">
-          <div class="col-7">
+          <div class="col-6">
             <p class="mb-0">
-              <small class="relative">relativeFiller</small><br />
-              <b class="productName">titleFiller</b>
+              <small class="order">#</small>
+              <b>―</b>
+              <small class="relative">relativeFiller</small>
+              <br />
+              <a href="" target=_blank class="productName">titleFiller</a>
             </p>
           </div>
+          <nav class="col-2">
+            <a
+              class="compare icon-small mb-1"
+              title="Compare all the related suggestions selected for ">
+              <small>Compare</small>
+            </a>
+          </nav>
+          <nav class="col-4">
+            <small class="categories">(...)</small>
+          </nav>
         </div>
-
     </section>
 
     <section>
@@ -46,15 +58,19 @@ type: app
                         <li class="mr-1"><p class="mb-0">Your access token: <span class="badge badge-light align-middle" id="accessToken"><i></i></span></p></li>
                         <li class="mr-1"><p class="mb-0">Last activity: <span class="badge badge-light align-middle" id="lastActivityFormatted"></span></p></li>
                     </ul>
+                    <!--
                     <h5 id="tag-badge" >Your contribution is tagged as: <span class="badge badge-info" id="tag-name"></span></h5>
+                    -->
                 </div>
 
                 <p class="mt-3">
-                    Download the <a onclick="downloadCSV()" href="#"> CSV of your activities</a>.
+                    Download the <a onclick="downloadCSV()" href="#">CSV of your activities</a>.
                 </p>
             </div>
 
+            <!--
             <div class="col-sm" id="informative">
+
                 <div class="card p-3">
                     <h3>Tag your evidence</h3>
                     <small class="mb-3 pb-3 border-bottom">
@@ -98,7 +114,7 @@ type: app
                         >Create +</a>
                     </div>
                 </div>
-            </div>
+            </div> -->
         </div>
     </section>
 

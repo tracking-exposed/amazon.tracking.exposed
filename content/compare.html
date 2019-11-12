@@ -1,0 +1,56 @@
+---
+title: How the same product get different reccomendations?
+subtitle: only by comparing personalized experience we can judge how algorithm guide us
+date: 2019-11-02T15:01:21+01:00
+draft: false
+description: Only by comparing how the same product get different reccomendations you can grasp the algorithm influence and personalization
+type: app
+---
+
+<div class="container">
+
+  <div id="error"></div>
+  <div id="ifVideoExists" style="display:none;">
+  <header
+    class="p-3 text-center alert badge-secondary"
+    style="background-color: #f7fbfa;border: 2px solid #d9230f;border-radius: .85rem;border-bottom: white;">
+    <h4 class="mt-0">
+      <span id="title"></span>
+    </h4>
+    <p class="m-0">
+      <b id="resultSize"></b>
+      times has been watched this product, and Amazon gave
+      <b id="relatedSize"></b>
+      recommented content
+    </p>
+  </header>
+  <!--
+  <smaller>Extra:
+    Was this video among the <a href="" id="relatedLink"><i>reccomended<i>?</a> —
+    <a href="" id="authorLink"><i>What was suggested</i></a> 
+      next to <span id="author"></span> contents? — Watch the video
+    <a href="" target=_blank id="ytLink">on YT</a> — Download the 
+    <a href="" id="csvLink">CSV</a>.
+  </smaller>
+  -->
+
+  <table id="master" class="table" style="display:none;">
+    <thead id="comparison-list-head"></thead>
+    <tbody id="comparison-list"></tbody>
+  </table>
+
+  <div id="comparison"><!-- here the tables get appended --></div> 
+  </div> <!-- #ifVideoExists -->
+
+</div>
+
+<script src="/js/global.js"></script>
+<script src="/js/public.js"></script>
+
+<script type="text/javascript">
+
+  $( document ).ready(function() {
+    initCompare();
+  });
+
+</script>
