@@ -137,7 +137,7 @@ function manageTag(action) {
         else {
             updateProfileInfo(result.profile);
             printMessage(resultDiv, 'Tag "<b>' + result.group.name + '</b>" has been created', 'success');
-        } 
+        }
         return result;
     })
     .catch(function(e) {
@@ -183,7 +183,14 @@ function addProductRow(video, i) {
     $("#" + computedId + " .compare").attr('href', `/compare/#${video.productId}`);
     let title = $("#" + computedId + " .compare").attr('title') + "«" + video.productName+ "»";
     $("#" + computedId + " .compare").attr('title', title);
+
     $("#" + computedId + " .relative").text(video.relative);
+
+    $("#" + computedId + " .relative").on('click', function(e) {
+        $("#" + computedId + " .relative").text(video.savingTime + " - " + video.id);
+          // devo far apparire l'id al posto della data,
+          // così da poter recuperare l'evidenza specifica
+    });
     $("#" + computedId + " .productName").text(video.productName);
     $("#" + computedId + " .productName").attr('href', "https://www.amazon.com/dp/" + video.productId);
     $("#" + computedId + " .order").text(`${i+ 1}`);
