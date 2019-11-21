@@ -184,17 +184,19 @@ function addProductRow(video, i) {
     let title = $("#" + computedId + " .compare").attr('title') + "«" + video.productName+ "»";
     $("#" + computedId + " .compare").attr('title', title);
 
-    $("#" + computedId + " .relative").text(video.relative);
+    $("#" + computedId + " .relative").text(video.relative + " - " + video.savingTime);
 
     $("#" + computedId + " .relative").on('click', function(e) {
-        $("#" + computedId + " .relative").text(video.savingTime + " - " + video.id);
+        $("#" + computedId + " .relative").text(video.id);
           // devo far apparire l'id al posto della data,
           // così da poter recuperare l'evidenza specifica
     });
     $("#" + computedId + " .productName").text(video.productName);
     $("#" + computedId + " .productName").attr('href', "https://www.amazon.com/dp/" + video.productId);
     $("#" + computedId + " .order").text(`${i+ 1}`);
-    $("#" + computedId + " .categories").html(video.sections.join('<br>'));
+    $("#" + computedId + " .categories").html(_.map(video.sections, function(s) {
+        return s.category + " (" + _.size(s.related) + ")";
+    }).join('<br>'));
 
     entry.removeAttr('hidden');
 }
