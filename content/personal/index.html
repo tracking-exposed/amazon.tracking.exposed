@@ -23,6 +23,30 @@ type: app
            <!-- Here are appended the clones of #master, by jQuery -->
         </div>
 
+        <!-- NOTE: this is hidden, and it is cloned from javascript, each time a new entry is present -->
+        <div id="masterResults" hidden class="row border-bottom p-2 mb-3 align-middle">
+          <div class="col-6">
+            <p class="mb-0">
+              <small class="order">#</small>
+              <b>―</b>
+              <small class="relative">relativeFiller</small>
+              <br />
+              <h4 class="title">titleFiller</h4>
+            </p>
+          </div>
+          <nav class="col-2">
+            <a
+              href="/qmap"
+              class="compare icon-small mb-1"
+              title="Compare all the related suggestions selected for ">
+              <small>Search-Answers-Maps</small>
+            </a>
+          </nav>
+          <nav class="col-4">
+            <h4 class="results">(...)</h4>
+            <h5 class="average">[avg]</h5>
+          </nav>
+        </div>
 
         <!-- NOTE: this is hidden, and it is cloned from javascript, each time a new entry is present -->
         <div id="master" hidden class="row border-bottom p-2 mb-3 align-middle">

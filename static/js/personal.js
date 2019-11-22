@@ -16,7 +16,12 @@ function personal(pages, profile) {
     const pk = getPubKey();
     const url = buildApiUrl('personal', pk + '/' + pagestr); // `/personal/${pk}/`);
     $.getJSON(url, (data) => {
-        _.each(data.recent, addProductRow);
+        _.each(data.recent, function(e, i) {
+            if(e.type == 'product') 
+                addProductRow(e, i);
+            if(e.type == 'search')
+                addSearchRow(e, i);
+        });
         addPages(data.total, pagestr);
         if(!profile) updateProfileInfo(data.supporter);
     });
@@ -171,6 +176,43 @@ function addPages(total, pages) {
             ul.append('<li class="page-item"><a class="page-link' + liStyle + '" onclick="personal(' + pageValue + ', true)">'+ page +'</a></li>');
         }
     }
+}
+
+function computeAverage(returned) {
+    USDEUR = 1.14;
+    const sequence = _.reduce(returned, function(memo, q) {
+        let ready;
+        if(q.unit == 'dollar')  {
+            ready = _.map(q.price, function(value) {
+                return value * USDEUR;
+            });
+        } else ready = q.price;
+
+        return _.concat(memo, ready);
+    }, []);
+    
+    if(_.size(sequence) > 0) {
+        console.log("aaaa");
+        return _.round(_.sum(sequence) / _.size(sequence), 1);
+    } else {
+        return 'N/A'
+    }
+}
+
+function addSearchRow(result, i) {
+    const entry = $("#masterResults").clone();
+    const computedId = `search-${result.id}`;
+
+    entry.attr("id", computedId);
+    $("#report").append(entry);
+
+    $("#" + computedId + " .search").attr('href', `/search/`);
+    $("#" + computedId + " .title").text(result.query);
+    $("#" + computedId + " .results").text(_.size(result.results));
+    $("#" + computedId + " .average").text(computeAverage(result.results) + ' €');
+    $("#" + computedId + " .relative").text(result.relative + " - " + result.savingTime);
+
+    entry.removeAttr('hidden');
 }
 
 function addProductRow(video, i) {
