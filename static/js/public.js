@@ -71,3 +71,15 @@ function initLast() {
     });
 }
 
+function searchCSV() {
+
+    let csvurl =null;
+    if (window.location.origin.match(/localhost/)) {
+        csvurl='http://localhost:11000/api/v1/searchcsv';
+        console.log("Development URL", csvurl);
+    } else {
+        csvurl='/api/v1/searchcsv';
+        console.log("Production URL", csvurl);
+    }
+    window.open(csvurl);
+}
