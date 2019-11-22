@@ -192,7 +192,6 @@ function computeAverage(returned) {
     }, []);
     
     if(_.size(sequence) > 0) {
-        console.log("aaaa");
         return _.round(_.sum(sequence) / _.size(sequence), 1);
     } else {
         return 'N/A'
