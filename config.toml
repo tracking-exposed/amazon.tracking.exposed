@@ -20,11 +20,17 @@ canonifyURLs = true
     name = "Umbrella project: Tracking Exposed"
     url = "https://tracking.exposed"
     weight = 90
-
- [[menu.featured]]
+ [[menu.main]]
+    page = "About"
     identifier = "about"
     name = "About"
-    url = "/about/"
+    url = "/about"
+    weight = 80
+
+ [[menu.featured]]
+    identifier = "First results"
+    name = "First results"
+    url = "/first-results/"
     pre = "/images/amazon-spy-wired.png"
     weight = 20
-    post = "This prototype works but is undocumented and supposedly only for researchers. It is not yet suitable for general use."
+    post = "This tool allow research to keep evidence on how Amazon personalize the shopping experience. Read more on our preliminary findings."

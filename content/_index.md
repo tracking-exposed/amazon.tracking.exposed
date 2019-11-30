@@ -10,15 +10,17 @@ og_url: "https://amazon.tracking.exposed"
 og_description: "Amazon personalize the shopping experience, by comparing how customers get treated, you can figure out the impact of algorithm in your life"
 ---
 
-## This tool is not yet ready for general use. It is usable only by researchers.
+# This tool not ready for general use.
 
-Our goal is to make this prototype an accessible tool, we lack of resources. As free software team we welcome contributions, and as contributors we welcome people sharing the manifesto.
+---
 
-For general inquiry and support, please refer to *support at tracking dot exposed*.
-[firefox extension](http://amazon.tracking.exposed/bin/amtrex-0.0.4-fx.xpi), [chrome extension](https://chrome.google.com/webstore/detail/amtrex/nopfdaeelmonpgdnoiknblckjkhjkecd).
-
-<smaller>
-    Illustration above cribbed from <a href="https://www.wired.com/story/amazon-marketplace-apps-privacy/" target=_blank>
-        wired.com
-    </a>.
-</smaller>
+#### Our goal in the short term is to allow non-researcher to use this tool. The first step is to define a clear data processing policy and a privacy statement.
+---
+#### The browser extension should have an explicit opt-in procedure; this is the main reason why at the moment this technology cannot be used outside of our team (despite the fact that it is free software, we don't want you to use it).
+---
+#### We need to offer two necessary interfaces, one would be about price comparison (might help to spot how dynamic pricing affects your offers), and the second would be on search query personalization.
+---
+<small>
+For general inquiry, please get in touch with *support at tracking dot exposed* -- Illustration above cribbed from <a href="https://www.wired.com/story/amazon-marketplace-apps-privacy/" target=_blank>
+        wired.com</a>.
+</small>
