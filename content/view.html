@@ -1,0 +1,45 @@
+---
+title: Comparare per capire le personalizzazioni.
+date: 2019-12-01T15:01:21+01:00
+draft: false
+description: Guarda le differenze che Amazon restituisce! Anche se due persone cercano la stessa cosa, non è detto che i risultati siano identici
+type: app
+---
+
+<div class="container">
+
+<div id="error"></div>
+<h1 style="text-align: center;">
+  Abbiamo cercato: <span id="title"></span>
+</h1>
+<hr />
+<div id="results"></div>
+
+
+<hr />
+<small>
+  Questa pagina riporta solo questi tre esperimenti:
+  <ol>
+    <li><a href="/view#856d33e9f08355ccaef76d4aff0c2cd998d9bb93,11e2fe1d28431ae0103dd315780a0b607a236d81,e1bba8794a6bb4aaeca7a4bb32c231d9aacc5201,a0edda0fa76b21c332e28df0e6d769463a1ac411-Smartphone">Smartphone</a>.</li>
+    <!-- GX, 8r, A5, Df-->
+    <li><a href="/view#a96123f71d6ea8c9cd1e3990efc7851a5df7db75,f3df489e0c1c8c2d296763d51ffbe4baee0b6ac5,4b38e0174b48b228a1df9fd4fd95f1e9fb019ae0,a10405686ca38a8dc3fb5ed2697cc2cc8340032d-Shampoo">Shampoo</a>.</li>
+    <!-- GX, 22, Df, A5 -->
+    <li><a href="/view#468cfad3f8ad8b9ea882675637910ca597c792cb,11b12f3c2040ae463007a591a739d20f86c14ed3,51d3fe52bbc01f60d30e50d6807aa7d1dbd14c97,573725c9e7d51ebfcf2fed3285de9baf99044ff1,d3296fd00807109e46f2ae0e4f5b9424144822e1-Bambola">Bambola</a>.</li>
+    <!-- A5, GX, 8r, Df -->
+
+    <li><a href="/view#6e919499ac2dd906804c7401a42c74aa30cb607c,e9cf9c4710be885ae72b71f64a2d9d56db6fd80a-Esperimento">Experiment</a>.</li>
+  </ol>
+</small>
+
+</div>
+
+<script src="/js/global.js"></script>
+<script src="/js/view.js"></script>
+
+<script type="text/javascript">
+
+  $( document ).ready(function() {
+    initView();
+  });
+
+</script>
