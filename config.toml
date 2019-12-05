@@ -1,5 +1,5 @@
 baseURL = "/"
-languageCode = "en-us"
+languageCode = "it"
 title = "Amazon Tracking Exposed"
 theme = "trex"
 enableRobotsTXT = true
@@ -7,8 +7,9 @@ canonifyURLs = true
 [params]
     subtitle = "amazon"
     subsite = "amazon"
-    description = "Collaborative analysis on shopping experience and personalization algorithm"
-    tagline = "Algorithms should be under users control; Watch what they do on a shopping experience"
+    description = "esperienza di acquisto su amazon"
+# Collaborative analysis on shopping experience and personalization algorithm"
+    tagline = "Gli algoritmi non sono neutrali, pertanto dovrebbero essere sotto il controllo di noi utenti"
 
 [permalinks]
     posts = "/:slug/"
@@ -20,6 +21,7 @@ canonifyURLs = true
     name = "Umbrella project: Tracking Exposed"
     url = "https://tracking.exposed"
     weight = 90
+
  [[menu.main]]
     page = "About"
     identifier = "about"
@@ -27,10 +29,25 @@ canonifyURLs = true
     url = "/about"
     weight = 80
 
+
  [[menu.featured]]
-    identifier = "First results"
-    name = "First results"
-    url = "/first-results/"
-    pre = "/images/amazon-spy-wired.png"
-    weight = 20
-    post = "This tool allow research to keep evidence on how Amazon personalize the shopping experience. Read more on our preliminary findings."
+    identifier = "parlare"
+    name= "Parlare di algoritmi e di potere"
+    url = "/parlare-di-algoritmi/"
+    weight = -180
+    pre = "/images/event.svg"
+    post = "Come parlare di algoritmi? Le nostre prime esperienze divulgative"
+ [[menu.featured]]
+    identifier = "cosa"
+    name = "Cosa c'è in Tracking Exposed"
+    url = "/cosa-e-tracking-exposed/"
+    weight = -170
+    pre = "/images/box_bgorange.svg"
+    post = "Amazon è solo l'ultima piattaforma, abbiamo iniziato con Faceobok, Youtube e Pornhub ;)"
+ [[menu.featured]]
+    identifier = "analisi"
+    name = "La nostra analisi in dettaglio"
+    url = "/analisi/"
+    weight = -160
+    pre = "/images/kindle.svg"
+    post = "Le ricerche comparate, i prezzi che cambiano: riflessioni e metodologia, per rendere questi esperimenti replicabili"
