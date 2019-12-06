@@ -7,9 +7,9 @@ canonifyURLs = true
 [params]
     subtitle = "amazon"
     subsite = "amazon"
-    description = "esperienza di acquisto su amazon"
-# Collaborative analysis on shopping experience and personalization algorithm"
-    tagline = "Gli algoritmi non sono neutrali, pertanto dovrebbero essere sotto il controllo di noi utenti"
+    description = "Un'analisi dell'algoritmo di amazon, considerazioni sul trattamento dati personali ed il loro impatto su di noi. Parte di una trasmissione divulgativa"
+    tagline = "Gli algoritmi controllano la tua esperienza online. Noi vorremmo che tu controllassi gli algoritmi."
+    ourvision = false
 
 [permalinks]
     posts = "/:slug/"
@@ -32,21 +32,21 @@ canonifyURLs = true
 
  [[menu.featured]]
     identifier = "parlare"
-    name= "Parlare di algoritmi e di potere"
+    name= "Algoritmi e potere"
     url = "/parlare-di-algoritmi/"
     weight = -180
     pre = "/images/event.svg"
-    post = "Come parlare di algoritmi? Le nostre prime esperienze divulgative"
+    post = "Le nostre prime esperienze divulgative"
  [[menu.featured]]
     identifier = "cosa"
     name = "Cosa c'è in Tracking Exposed"
     url = "/cosa-e-tracking-exposed/"
     weight = -170
     pre = "/images/box_bgorange.svg"
-    post = "Amazon è solo l'ultima piattaforma, abbiamo iniziato con Faceobok, Youtube e Pornhub ;)"
+    post = "Oltre ad Amazon, abbiamo analizzato Faceobok, Youtube e persino Pornhub"
  [[menu.featured]]
     identifier = "analisi"
-    name = "La nostra analisi in dettaglio"
+    name = "Per approfondire"
     url = "/analisi/"
     weight = -160
     pre = "/images/kindle.svg"
