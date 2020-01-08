@@ -13,7 +13,7 @@ function prettifyHref(href) {
     const nodomain = href.replace(/https?:\/\/[a-z][a-z][a-z]?\.amazon\.[a-z][a-z][a-z]?/, '');
     const noparms = nodomain.replace(/\?.*/, '');
 
-    if ( _.size(href) > _.size(nodomain) > _.size(noparms)) {
+    if ( _.size(href) >= _.size(nodomain) >= _.size(noparms)) {
         console.log(_.size(href), _.size(nodomain), _.size(noparms));
     } else {
         console.log(href, "\n", nodomain, "\n", noparms);
@@ -194,7 +194,6 @@ function appendSearch(elem, o) {
     const prices = _.compact(_.map(o.results, function(e) {
         return e.first ? _.parseInt(e.first) : null;
     }));
-    console.log(prices, _.sum(prices), _.size(prices));
     const avg = _.round(_.sum(prices) / _.size(prices), 1);
     const disavg = ( _.size(o.results) && o.results[0].unit ) ?
         avg + " " + o.results[0].unit : 
@@ -203,9 +202,7 @@ function appendSearch(elem, o) {
     $("#" + o.id + " .sections").text(_.map(o.sections, 'display').join(','));
     $("#" + o.id + " .query").text(o.query);
     $("#" + o.id + " .average").text(disavg);
-    $("#" + o.id + " .results").text(
-        _.size(o.results) + " (" + _.size(prices) + ")"
-    );
+    $("#" + o.id + " .results").text(_.size(o.results) + " <" + _.size(prices) + ">");
     $("#" + o.id + " .publicKey").html('<a href="/personal/#' + o.publicKey +
         '" target=_blank>' + o.publicKey.substr(0, 4) + '</a>'
     );

@@ -83,3 +83,21 @@ function searchCSV() {
     }
     window.open(csvurl);
 }
+
+function initCompare() {
+
+    const productId = window.location.href.split('/#').pop();
+    if(_.size(productId) < 6) {
+        const nope = `<h3 class="text-center">Error: URL should contain a valid-look-alike Amazon product Id</h3>`;
+        $("#error").html(nope);
+        return console.log("error N#1 (validation)");
+    }
+
+    const url = buildApiUrl('product', productId);
+    $.getJSON(url, function(data) {
+        console.log(data);
+    })
+
+
+
+}
