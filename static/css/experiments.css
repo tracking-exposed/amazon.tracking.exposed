@@ -1,0 +1,23 @@
+/*
+ * GLORY - GLORY - GLORY to StackOverflow
+   https://stackoverflow.com/questions/306924/can-i-change-the-checkbox-size-using-css
+ */
+input[type=checkbox]
+{
+  /* Double-sized Checkboxes */
+  -ms-transform: scale(2); /* IE */
+  -moz-transform: scale(2); /* FF */
+  -webkit-transform: scale(2); /* Safari and Chrome */
+  -o-transform: scale(2); /* Opera */
+  transform: scale(2);
+  margin: 10px;
+}
+
+.experiment {
+  font-size: 140%;
+}
+
+.experiment-muted {
+    color: darkgray;
+    cursor: not-allowed;
+}
