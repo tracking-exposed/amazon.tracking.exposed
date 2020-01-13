@@ -43,11 +43,11 @@ canonifyURLs = true
     url = "/how-does-it-work/"
     weight = -170
     pre = "/images/box_bgorange.svg"
-    post = "Beside Amazon, we enable analysis of Faceobok, Youtube, and Pornhub."
+    post = "Amazon personalized results, dynamic pricing and investigation on personal data."
  [[menu.featured]]
     identifier = "kwnomore"
     name = "Know more"
     url = "/know-more/"
     weight = -160
     pre = "/images/kindle.svg"
-    post = "Amazon personalized results, dynamic pricing and investigation on personal data."
+    post = "Beside Amazon, we enable analysis of Faceobok, Youtube, and Pornhub."
