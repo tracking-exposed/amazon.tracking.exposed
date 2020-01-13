@@ -7,8 +7,8 @@ canonifyURLs = true
 [params]
     subtitle = "amazon"
     subsite = "amazon"
-    description = "Un'analisi dell'algoritmo di amazon, considerazioni sul trattamento dati personali ed il loro impatto su di noi. Parte di una trasmissione divulgativa"
-    tagline = "Gli algoritmi controllano la tua esperienza online. Noi vorremmo che tu controllassi gli algoritmi."
+    tagline = "A tool for algorithm analysts to look into Amazon's personalization."
+    description = "Algorithm analysis based on passive data scraping of amazon pages. With our tools, researcher can collect evidences on dynamic pricing abuses and data discrimination."
     ourvision = false
 
 [permalinks]
@@ -31,23 +31,23 @@ canonifyURLs = true
 
 
  [[menu.featured]]
-    identifier = "parlare"
-    name= "Algoritmi e potere"
-    url = "/parlare-di-algoritmi/"
+    identifier = "what"
+    name = "What is it amTREX?"
+    url = "/what-we-do/"
     weight = -180
     pre = "/images/event.svg"
-    post = "Le nostre prime esperienze divulgative"
+    post = "Our first experiments and how the tool work."
  [[menu.featured]]
-    identifier = "cosa"
-    name = "Cosa c'è in Tracking Exposed"
-    url = "/cosa-e-tracking-exposed/"
+    identifier = "how"
+    name= "How does it work"
+    url = "/how-does-it-work/"
     weight = -170
     pre = "/images/box_bgorange.svg"
-    post = "Oltre ad Amazon, abbiamo analizzato Faceobok, Youtube e persino Pornhub"
+    post = "Beside Amazon, we enable analysis of Faceobok, Youtube, and Pornhub."
  [[menu.featured]]
-    identifier = "analisi"
-    name = "Per approfondire"
-    url = "/analisi/"
+    identifier = "kwnomore"
+    name = "Know more"
+    url = "/know-more/"
     weight = -160
     pre = "/images/kindle.svg"
-    post = "Le ricerche comparate, i prezzi che cambiano: riflessioni e metodologia, per rendere questi esperimenti replicabili"
+    post = "Amazon personalized results, dynamic pricing and investigation on personal data."
