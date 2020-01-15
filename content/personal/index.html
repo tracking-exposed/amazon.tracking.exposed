@@ -7,8 +7,8 @@ description: Personal interface, this link is only know by you; keep it private
 type: app
 ---
 
-<div class="container">
 
+<div class="container">
     <section>
         <h2>Recent evidence collected</h2>
         <div class="row align-middle mb-3">
@@ -75,16 +75,15 @@ type: app
     <section>
         <div class="row mb-5">
             <div class="col-sm">
-                <h3>Your pseudonym is <i id="user-name"></i></h3>
+                <h3>Info about this profile:</h3>
                 <div id="user-info">
-                    <p class="mb-2">Here you can find all data collected from your <b>Amazon activity</b> since <span class="badge badge-pill badge-light" id="createdAtFormatted"></span></p>
                     <ul class="mb-4">
-                        <li class="mr-1"><p class="mb-0">Your access token: <span class="badge badge-light align-middle" id="accessToken"><i></i></span></p></li>
+                        <li class="mr-1"><p class="mb-0">The pseudonym is <span class="badge badge-light align-middle" id="user-name"></span></p></li>
+                        <li class="mr-1"><p class="mb-0">Your access token: <span class="badge badge-light align-middle" id="accessToken"></span></p></li>
+                        <li class="mr-1"><p class="mb-0">First activity: <span class="badge badge-light align-middle" id="createdAtFormatted"></span></p></li>
                         <li class="mr-1"><p class="mb-0">Last activity: <span class="badge badge-light align-middle" id="lastActivityFormatted"></span></p></li>
+                        <li class="mr-1"><p class="mb-0">Tagging as: <span class="badge badge-info align-middle" id="tag-name">{no tag configured}</span></p></li>
                     </ul>
-                    <!--
-                    <h5 id="tag-badge" >Your contribution is tagged as: <span class="badge badge-info" id="tag-name"></span></h5>
-                    -->
                 </div>
 
                 <p class="mt-3">
@@ -140,8 +139,8 @@ type: app
             </div>
         </div>
     </section>
-
 </div>
+
 
 <script src="/js/global.js"></script>
 <script src="/js/personal.js"></script>

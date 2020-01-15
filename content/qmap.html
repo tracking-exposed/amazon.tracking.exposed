@@ -9,18 +9,29 @@ type: app
 
 <div class="container">
 
-  <p>Download full <a href="#" onclick="searchCSV()">CSV</a>.</p>
+  <p>the full <a href="#" onclick="searchCSV()">CSV</a> of last search queries and results.
+    <span style="display: inline-block;" class="col-md-2"> </span>
+    CSV: 
+    <b>
+      <smaller>/api/v2/flexibleCSV/&lt;QUERY&gt;/[tagName]</smaller>
+    </b>
+  </p>
+  <hr/>
+
   <div id="master" hidden>
     <nav class="col-12" style="margin-top: 1.7em;">
-      <span style="font-size: 2em;" class="title">[titlef]</span> - 
-      <span style="font-size: 2em;" class="average">[avg]</span> -
-      <span style="padding-left:2em; font-size: 1.5em;">
+      <span class="timeago col-md-3" style="display: inline-block;">[timeago]</span> 
+      <i style="cursor: pointer;" class="view">👁️</i>
+      <span style="font-size: 1.3em; display: inline-block;" class="title col-md-4">[titlef]</span>
+      <span style="font-size: 1.3em; display: inline-block;" class="average col-md-1 badge">[avg]</span>
+      <span style="font-size: 1.3em; display: inline-block;">
         <a href="" target=_blank class="individual">[name]</a>
-        <a href="" target=_blank class="owner">👁️</a>
       </span>
       <div class="slots">x..x</div>
     </nav>
   </div>
+
+  <!-- this is the div where the master-clone get appended: -->
   <div id="report"></div>
 
 </div>

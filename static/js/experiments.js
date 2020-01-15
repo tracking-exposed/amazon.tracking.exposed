@@ -32,7 +32,7 @@ function loadActivation() {
     $("#actions").text("Experiment activation");
     $("#actions + p").text("This is the sequence you'll make repeat to all the test participants:");
     $(".experiment").addClass('experiment-muted');
-    $("#activation-form").style({display: show });
+    $("#activator--form").removeAttr('hidden');
     $("#activation-button").click(activate);
 }
 

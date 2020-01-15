@@ -23,7 +23,7 @@ function computeAverage(returned) {
 }
 /* duplicated code */
 
-function addSearchEntry(r) {
+function addSearchEntry(r, i) {
 
     const entry = $("#master").clone();
     const computedId = `r-${r.id}`;
@@ -31,23 +31,24 @@ function addSearchEntry(r) {
     entry.attr("id", computedId);
     $("#report").append(entry);
 
-    console.log(r);
     $("#" + computedId + " .title").text(r.query);
-    $("#" + computedId + " .average").text(computeAverage(r.results) + ' €');
+    $("#" + computedId + " .average").text(computeAverage(r.results));
     $("#" + computedId + " .individual").text(r.pseudo);
-    $("#" + computedId + " .owner").attr('href', `/personal/#${r.publicKey}`);
+    $("#" + computedId + " .view").click(function() {
+        $(".blockos-" + computedId).removeAttr('hidden');
+    });
     $("#" + computedId + " .individual").attr('href', `/personal/#${r.publicKey}`);
 
     const blockos = _.map(r.results, function(sugg) {
-        let closure = (sugg.unit == 'euro') ? '€)' : '$)';
-        let x = '<span class="col-2" style="display:inline-block;border:1px #904242 solid;border-radius: 10px;">' +
-                '<smaller>|' + sugg.index + '|</smaller>' +
-                sugg.name + ' (' + _.first(sugg.price) + closure + 
-                '</span>';
-        return x;
+        return "<span class='blockos-"+ computedId + "' hidden>" +
+                    "<small>" + sugg.index + "</small>" +
+                    '<small class="badge badge-light">' + sugg.name + '</small>' + 
+                "</span>";
     });
+    $("#" + computedId + " .timeago").text( (i+1) + ' - ' + 
+        r.timeago + ' - ' + _.size(blockos)
+    );
     $("#" + computedId + " .slots").html(blockos.join(''));
-    
     entry.removeAttr('hidden');
 }
 
