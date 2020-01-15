@@ -72,7 +72,7 @@ function manageTag(action) {
 
     /* in data we add the tag info to be sent */
     let data = {
-        tag,
+        tag: _.trim(tag),
         password,
         description,
         accessibility: private ? 'private': 'public'
@@ -140,8 +140,8 @@ function manageTag(action) {
             printMessage(resultDiv, result.message);
         }
         else {
-            updateProfileInfo(result.profile);
-            printMessage(resultDiv, 'Tag "<b>' + result.group.name + '</b>" has been created', 'success');
+            updateProfileInfo(result);
+            printMessage(resultDiv, 'You are now tagging as "<b>' + result.tag.name + '</b>"', 'success');
         }
         return result;
     })
