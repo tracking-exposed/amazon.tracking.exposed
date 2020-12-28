@@ -2,12 +2,11 @@
 date: 2020-01-10T15:01:21+01:00
 draft: false
 layout: home
-
 og_title: "Amazon Tracking Exposed"
 og_type: "website"
 og_image: "http://amazon.tracking.exposed/amazon-logo.jpg"
 og_url: "https://amazon.tracking.exposed"
-og_description: "Gli algoritmi controllano la tua esperienza online. Noi vorremmo che tu controllassi gli algoritmi."
+og_description: "Algorithms control your online experience, we want people should be in control of their algorithms"
 ---
 
 <h1 style="font-size:2.5em;margin-top:-10rem;font-weight:bolder">
