@@ -13,9 +13,8 @@ og_description: "Algorithms control your online experience, we want people shoul
 We operate to expose how tracking and profiting from user data had a negative impact on society, so that proper political and civil actions can be taken.
 </h1>
 
----
-
-### How have been used for? Check out these five winter school research projects:
+{{<colorblock text="Check out what 30 students —in a four days workshop— produced five original research on how Amazon personalizes the shopping experience based on individuals' behavior" color="secondary" >}}
+<br>
 
 * [Tracking Gender Bias in Amazon Search Results](https://wiki.digitalmethods.net/Dmi/WinterSchool2020trackinggenderbiasamazon).
 * [Is Amazon.com the Same Everywhere?](https://wiki.digitalmethods.net/Dmi/WinterSchool2020amazonregional).
@@ -23,7 +22,8 @@ We operate to expose how tracking and profiting from user data had a negative im
 * [Does Amazon know your Wealth?](https://wiki.digitalmethods.net/Dmi/WinterSchool2020DoesAmazonknowyourWealth).
 * [Amazon’s Choice: An inquiry into Amazon](https://wiki.digitalmethods.net/Dmi/WinterSchool2020amazonschoice).
 
-Or also, in a master thesis where algorithm analysis might show potential traces of privacy violations
+<br>
+{{<colorblock text="Thesis: how Amazon algorithm lead to customer discrimination?" color="secondary" >}}
 
 {{<resource
 	kind="paper"
