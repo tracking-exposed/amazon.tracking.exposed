@@ -9,14 +9,14 @@ og_url: "https://amazon.tracking.exposed/about"
 og_description: "Dettagli sulla nostra analisi dell'algoritmo di personalizzazion usato in amazon.it"
 ---
 
-# It collects from two pages: product and search query.
+### How does it work?
 
-1. You should install the browser extension.
-2. The researcher might try to repeat the same searches with difgerent variables (profile logged or not, same ip, same postal code, browser language, clean cookies, etc)
-3. The extension gives access to the personal page, and **with APIs you can download aggregated data in CSV and JSON** format. There are also public APIs to download, for example, all the search queries.
-4. The browser extension do not keep track of any personal data related to the profile, therefore, the method of content selection is mandatory to interpret the personalization. Documentation is it still a work in progress! Please reach out to support at tracking dot exposed.
+1. You should install the browser extension: it collects from two pages: _product_ and _search query_.
+2. Then, the researcher might repeat the same searches with different variables (profile logged or not, same IP, same postal code, browser language, clean cookies, etc.)
+3. The extension gives access to the personal page, and with the APIs implemented in our server,, you can download aggregated data in CSV and JSON format. There are also public APIs to download, for example, all the search queries.
+4. The browser extension does not keep track of any personal data related to the profile; therefore, the method of content selection is mandatory to interpret the personalization. *Documentation is still a work in progress!* If you want to know more, please reach out to support at tracking dot exposed.
 
-# How have been used for? Five winter school research projects:
+### 30 students, one week of work, five example of algorithmic discrimination in market:
 
 * [Tracking Gender Bias in Amazon Search Results](https://wiki.digitalmethods.net/Dmi/WinterSchool2020trackinggenderbiasamazon).
 * [Is Amazon.com the Same Everywhere?](https://wiki.digitalmethods.net/Dmi/WinterSchool2020amazonregional).
@@ -24,7 +24,7 @@ og_description: "Dettagli sulla nostra analisi dell'algoritmo di personalizzazio
 * [Does Amazon know your Wealth?](https://wiki.digitalmethods.net/Dmi/WinterSchool2020DoesAmazonknowyourWealth).
 * [Amazon’s Choice: An inquiry into Amazon](https://wiki.digitalmethods.net/Dmi/WinterSchool2020amazonschoice).
 
-# A Master thesis
+### master thesis from Dimitri Koehorst, on inferring (potential) privacy violation via algorithm analyisis
 
 {{<resource
 	kind="paper"
@@ -37,6 +37,6 @@ og_description: "Dettagli sulla nostra analisi dell'algoritmo di personalizzazio
 	href="https://github.com/tracking-exposed/presentation/blob/master/Dimitri%20Koehorst%20Master%20Thesis%20Final%20Version.pdf" >}}
 
 
-# Or, check it out, our first experimental report
+### Our firt experimental report (November 2019)
 
-Used as part of a Italian television documentary, [Amazon algorithm analysis and impact assessment](https://github.com/tracking-exposed/presentation/blob/master/amazon.tracking.exposed%20-%20English%20short%20report%20%20-%20Version%204.pdf).
+As part of a Italian television documentary, [Amazon algorithm analysis and impact assessment](https://github.com/tracking-exposed/presentation/blob/master/amazon.tracking.exposed%20-%20English%20short%20report%20%20-%20Version%204.pdf).
