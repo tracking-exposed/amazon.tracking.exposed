@@ -6,40 +6,44 @@ og_title: "Know more about us"
 og_type: "website"
 og_image: "http://amazon.tracking.exposed/amazon-logo.jpg"
 og_url: "https://amazon.tracking.exposed/know-more"
-og_description: "Trex is an infrastructure for researchers"
+og_description: "TRex is an infrastructure for researchers"
 ---
 
-# 1) We are unfunded and struggling
+### A small collection of publications to talk about our approaches and methods
 
----
+{{<resource
+  kind="link"
+  title="Political advertising exposed: tracking Facebook ads in the 2021 Dutch elections"
+  description="A unique experiment that merges academics, challenges about passive platform scraping, and a newspaper. They analyze political messages in advertising, during the Dutch national campaign prior to elections."
+  when="March"
+  nature="external"
+  author="Davide Beraldo & Stefania Milan"
+  href="https://policyreview.info/articles/news/political-advertising-exposed-tracking-facebook-ads-2021-dutch-elections/1543">}}
 
-# 2) We do cool stuff but we don't get headline. DAH.
+{{<resource
+  kind="link"
+  title="Twitter thread summarizing the Youtube search query analysis"
+  description="Regarding the January analysis on YouTube, a differently accessible explaination that you can RT ;P"
+  when="February"
+  nature="external"
+  author="Tracking Exposed"
+  href="https://twitter.com/trackingexposed/status/1365294706050142209">}}
 
----
+{{<resource
+  kind="link"
+  when="Summer"
+  title="Youtube collaborative observation"
+  description="We apply the collaborative observation to YouTube, regardless the management and personalization of COVID-19 informative videos; we released open data, improved technology, and wrote a paper with preliminary findings. This paper is not published by Springer."
+  href="https://youtube.tracking.exposed/wetest/1/"
+  resource2="analysis updates"
+  resource2href="https://youtube.tracking.exposed/wetest/announcement-1/"
+  resource1="preprint paper (14 pages)"
+  resource1href="https://github.com/tracking-exposed/experiments-data/blob/master/wetest1/wetest-paper-submitted-preprint.pdf">}}
 
-We are open to any proactive proposal from independent individuals. By *proactive*, we mean that we are looking for researchers, PhD students, journalist, programmers and professionals such as designers and web developers. In other words, we are looking for people that have already some form of expertise and self-management that are willing to contribute to our projects. If you fit, the best way is to reach out in our [mattermost channel](https://chat.securitywithoutborders.org/community/channels/trackingexposed), or write an email at: *support* at *tracking* dot *exposed*
-
-**Unfortunately** at the moment we cannot manage volunteers that cannot work independently, as we don't have simple tasks to delegate. If you feel you can do anything meaningful in the projects listed below connect with us! Your help would be very appreciated.
-
-\* Each one has something different and your input might be more appropriate in their 'contact page':
-
-<div class="card-deck">
-  {{<trexproj
-      href="https://facebook.tracking.exposed"
-      desc="Analyze the Facebook algorithm by compare your informative experience; Reuse the data in creative ways"
-      suffix="facebook.svg"
-      bgcolor="#3b5898" >}}
-
-  {{<trexproj
-      href="https://youtube.tracking.exposed"
-      desc="Anyone has a unique list of recommended videos. Compare with your friends or join experiment group"
-      suffix="youtube.svg" >}}
-
-  {{<trexproj
-      href="https://pornhub.tracking.exposed"
-      desc="The biggest Adult content portal! what they do to raise engagement? We don't know yet"
-      bgcolor="#1b1b1b"
-      suffix="pornhub.svg" >}}
-
-</div>
-
+{{<resource
+    kind="paper"
+    when="April"
+    title="Thinking Outside the Black-Box: The Case for “Algorithmic Sovereignty” in Social Media"
+    author="Urbano Reviglio, Claudio Agosti"
+    description="This article is an interdisciplinary critical analysis of personalization systems and the gatekeeping role of current mainstream social media. The first section presents a literature review of data-driven personalization and its challenges in social media. The second section sheds light on increasing concerns regarding algorithms’ ability to overtly persuade—and covertly manipulate—users for the sake of engagement, introducing the emergence of the exclusive ownership of behavioral modification through hyper-nudging techniques. The third section empirically analyzes users’ expectations and behaviors regarding such data-driven personalization to frame a conceptualization of users’ agency. The fourth section introduces the concept of “algorithmic sovereignty.” Current projects that aim to grant this algorithmic sovereignty highlight some potential applications. Together this novel theoretical framework and empirical applications suggest that, to preserve trust, social media should open their personalization algorithms to a social negotiation as the first step toward a more sustainable social media landscape. To decentralize the immense power of mainstream social media, guarantee a democratic oversight, and mitigate the unintended undesirable consequences of their algorithmic curation, public institutions and civil society could help in developing and researching public algorithms, fostering a collective awareness so as to eventually ensure a fair and accountable “algorithmic sovereignty.”"
+    href="https://journals.sagepub.com/doi/full/10.1177/2056305120915613">}}
