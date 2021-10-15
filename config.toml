@@ -50,7 +50,7 @@ canonifyURLs = true
     pre = "/images/box_bgorange.svg"
     post = "Amazon personalized results, dynamic pricing and investigation on personal data."
  [[menu.featured]]
-    identifier = "kwnomore"
+    identifier = "knowmore"
     name = "Know more"
     url = "/know-more/"
     weight = -160
