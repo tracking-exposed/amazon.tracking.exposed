@@ -13,7 +13,12 @@ og_description: "Algorithms control your online experience, we want people shoul
 We operate to expose how tracking and profiting from user data had a negative impact on society, so that proper political and civil actions can be taken.
 </h1>
 
-{{<colorblock text="Check out what 30 students —in a four days workshop— produced five original research on how Amazon personalizes the shopping experience based on individuals' behavior" color="secondary" >}}
+This project start by working for a documentary in RAI (Petrolio), italian national television, and this is the small report we deliver to the EDPS as part of the recorded material: [Amazon algorithm analysis and impact assessment](https://github.com/tracking-exposed/presentation/blob/master/amazon.tracking.exposed%20-%20English%20short%20report%20%20-%20Version%204.pdf); A [video excerpt in italian](https://vimeo.com/378307005) (National TV channel "Rai2", TV Program: “Petrolio”, Episod: “Il mondo (segreto) di Amazon”, 12/2019.) - **to access the video, the password is "trex"**.
+
+{{<colorblock 
+   text="Check out what 30 students —in a four days workshop— produced five original research on how Amazon personalizes the shopping experience based on individuals' behavior" 
+   color="secondary" >}}
+
 <br>
 
 * [Tracking Gender Bias in Amazon Search Results](https://wiki.digitalmethods.net/Dmi/WinterSchool2020trackinggenderbiasamazon).
@@ -35,8 +40,6 @@ We operate to expose how tracking and profiting from user data had a negative im
 	description="In recent times, data has become increasingly central to a variety of different companies. While the use of data has become widespread, there are some companies whose entire business model revolves around the use of data. One  such company is Amazon. Initially it was merely an online bookstore, but as the company grew it incorporated multiple new branches, such as Amazon Web Services, which allow the company to collect data from a variety of different sources. C ompanies such as Amazon use this data to optimize their services, which allows them to gain certain advantages over their competitors. However, this usage of data is bound by international regulations, one of which is the GDPR, the new data  protection legislation of the European Union. By using data collected from the Amazon.com webstore as a case study, this thesis investigates the shift of companies towards a data-oriented business model, and investigates certain problems t hat this shift brings. This is done through the research question: How can we conceptualize the data collection practices of Amazon in relation to the General Data Protection Regulation?"
 	href="https://github.com/tracking-exposed/presentation/blob/master/Dimitri%20Koehorst%20Master%20Thesis%20Final%20Version.pdf" >}}
 
-
-Last but not least, this project start by working for a documentary in RAI (Petrolio), italian national television, and this is the small report we deliver to the EDPS as part of the recorded material: [Amazon algorithm analysis and impact assessment](https://github.com/tracking-exposed/presentation/blob/master/amazon.tracking.exposed%20-%20English%20short%20report%20%20-%20Version%204.pdf).
 
 ---
 

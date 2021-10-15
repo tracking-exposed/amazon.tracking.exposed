@@ -4,20 +4,15 @@ draft: false
 ---
 
 <div style="font-size:1.9em">
-
-
-— We develop a tool for independent third-party analysis; In this site, we talk about about the Amazon shopping portal ( <a href="https://tracking.exposed">but that's more</a>).
-<br>
-— We contest algorithms logic, as we don't believe the corporate PR stunts.
-<br>
-— We infer privacy violations, as personalization is an effect of profiling, regulated under GDPR.
-<br>
-— We complain to data protection authorities
-<br>
-— We promote this method to be open source and usable by anyone willing to learn it.
+— The browser extension collects passively what Amazon return to the browser (it can be your profile, or a clean just made up for research, or even automate access like a bot).
 <br>
 <br>
-
+— The browser extension sent an HTML to the server, that dissect and extract metadata.
+<br>
+<br>
+— From the API offered by the backend, you can download metadata organized for data analysis.
 </div>
+<br>
+<br>
 
-_contact_ support at tracking dot exposed
+_contact:_ info at tracking dot exposed
