@@ -7,7 +7,7 @@ canonifyURLs = true
 [params]
     subtitle = "amazon"
     subsite = "amazon"
-    tagline = "A tool for algorithm analysts to look into Amazon's personalization."
+    tagline = "This tool to study Amazon's personalization algorithm is now DISCONTINUED."
     description = "Algorithm analysis based on passive data scraping of amazon pages. With our tools, researcher can collect evidences on dynamic pricing abuses and data discrimination."
     ourvision = false
 

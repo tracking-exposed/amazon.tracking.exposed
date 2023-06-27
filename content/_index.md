@@ -9,17 +9,34 @@ og_url: "https://amazon.tracking.exposed"
 og_description: "Algorithms control your online experience, we want people should be in control of their algorithms"
 ---
 
-<h1 style="font-size:2.5em;margin-top:-10rem;font-weight:bolder">
-We operate to expose how tracking and profiting from user data had a negative impact on society, so that proper political and civil actions can be taken.
-</h1>
+<br />
+<br />
+<br />
+<br />
+<br />
 
-This project start by working for a documentary in RAI (Petrolio), italian national television, and this is the small report we deliver to the EDPS as part of the recorded material: [Amazon algorithm analysis and impact assessment](https://github.com/tracking-exposed/presentation/blob/master/amazon.tracking.exposed%20-%20English%20short%20report%20%20-%20Version%204.pdf); A [video excerpt in italian](https://vimeo.com/378307005) (National TV channel "Rai2", TV Program: “Petrolio”, Episod: “Il mondo (segreto) di Amazon”, 12/2019.) - **to access the video, the password is "trex"**.
+<style>
+p, li {
+	font-size: 1.4em;
+}
+</style>
 
-{{<colorblock 
-   text="Check out what 30 students —in a four days workshop— produced five original research on how Amazon personalizes the shopping experience based on individuals' behavior" 
-   color="secondary" >}}
+amazon.tracking.exposed started because of a collaboration between [Claudio Agosti](https://linktr.ee/claudio.agosti) 
+and the RAI, the Italian state TV, in summer 2019. Has been produced free sofrware (on [github](https://github.com/tracking-exposed/amtrex)) and an investigation. The tool was necessary to offer new perspecives in [documentary about Amazon](https://www.rai.it/ufficiostampa/assets/template/us-articolo.html?ssiPath=/articoli/2019/12/Petrolio-ed126ca7-42a3-4752-a727-a6eeb1176895-ssi.html). After th media publicartion, it become part of the Tracking Exposed pipeline, used by students and researchers to study Amazon's personalization algorithms.
 
-<br>
+The tool consisted in a **browser extension**, a **backend to process the scraped evidences**, and this website to return the metadata produced as CSV, to let researcher complete the analysis with external tools. The extension and the backend stop to be maintained in 2021, hencefort this tool should be discontinued because meanwhile Amazon has update its web structure and we didn't update our scraping mechanism.
+
+Below you can find the three episode where the tool was effective to inspect Amazon inernal logics:
+
+### June 2020
+
+[Warehouse of information: Amazon's data collection practices and their relation to GDPR](https://github.com/tracking-exposed/presentation/blob/master/Dimitri%20Koehorst%20Master%20Thesis%20Final%20Version.pdf)
+
+_Dimitri Koehorst - Universiry of Amsterdam master thesis_
+
+In recent times, data has become increasingly central to a variety of different companies. While the use of data has become widespread, there are some companies whose entire business model revolves around the use of data. One  such company is Amazon. Initially it was merely an online bookstore, but as the company grew it incorporated multiple new branches, such as Amazon Web Services, which allow the company to collect data from a variety of different sources. C ompanies such as Amazon use this data to optimize their services, which allows them to gain certain advantages over their competitors. However, this usage of data is bound by international regulations, one of which is the GDPR, the new data  protection legislation of the European Union. By using data collected from the Amazon.com webstore as a case study, this thesis investigates the shift of companies towards a data-oriented business model, and investigates certain problems t hat this shift brings. This is done through the research question: How can we conceptualize the data collection practices of Amazon in relation to the General Data Protection Regulation?
+
+### January 2020
 
 * [Tracking Gender Bias in Amazon Search Results](https://wiki.digitalmethods.net/Dmi/WinterSchool2020trackinggenderbiasamazon).
 * [Is Amazon.com the Same Everywhere?](https://wiki.digitalmethods.net/Dmi/WinterSchool2020amazonregional).
@@ -27,26 +44,12 @@ This project start by working for a documentary in RAI (Petrolio), italian natio
 * [Does Amazon know your Wealth?](https://wiki.digitalmethods.net/Dmi/WinterSchool2020DoesAmazonknowyourWealth).
 * [Amazon’s Choice: An inquiry into Amazon](https://wiki.digitalmethods.net/Dmi/WinterSchool2020amazonschoice).
 
-<br>
-{{<colorblock text="Thesis: how Amazon algorithm lead to customer discrimination?" color="secondary" >}}
+### December 2019
 
-{{<resource
-	kind="paper"
-	title="Warehouse of information: Amazon's data collection practices and their relation to GDPR"
-	when="September"
-	nature="external"
-	author="Dimitri Koehorst (UvA master thesis)"
-	authorLink="https://duckduckgo.com/?q=dimitri+koehorst+uva+amazon+algorithm+analysis"
-	description="In recent times, data has become increasingly central to a variety of different companies. While the use of data has become widespread, there are some companies whose entire business model revolves around the use of data. One  such company is Amazon. Initially it was merely an online bookstore, but as the company grew it incorporated multiple new branches, such as Amazon Web Services, which allow the company to collect data from a variety of different sources. C ompanies such as Amazon use this data to optimize their services, which allows them to gain certain advantages over their competitors. However, this usage of data is bound by international regulations, one of which is the GDPR, the new data  protection legislation of the European Union. By using data collected from the Amazon.com webstore as a case study, this thesis investigates the shift of companies towards a data-oriented business model, and investigates certain problems t hat this shift brings. This is done through the research question: How can we conceptualize the data collection practices of Amazon in relation to the General Data Protection Regulation?"
-	href="https://github.com/tracking-exposed/presentation/blob/master/Dimitri%20Koehorst%20Master%20Thesis%20Final%20Version.pdf" >}}
-
+We produce a small report for the European Data Protection Supervisor this is the small report we deliver to the EDPS as part of the recorded material: [Amazon algorithm analysis and impact assessment](https://github.com/tracking-exposed/presentation/blob/master/amazon.tracking.exposed%20-%20English%20short%20report%20%20-%20Version%204.pdf); A [video excerpt in italian](https://vimeo.com/378307005) (National TV channel "Rai2", TV Program: “Petrolio”, Episode: “Il mondo (segreto) di Amazon”, 12/2019.)
 
 ---
 
-<div class="text-center">
-    <img src="/images/amazon-spy-wired.png" alt="" class="align-center" style="max-width:100%" />
-</div>
+### May 2023
 
-<small>
-    Illustration credit: <a href="https://www.wired.com/story/amazon-marketplace-apps-privacy/" target=_blank>wired.com</a>.
-</small>
+In [May 2023, Tracking Exposed has been restructured and become AI-Forensics](https://tracking.exposed).
