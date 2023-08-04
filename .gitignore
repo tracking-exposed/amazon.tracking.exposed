@@ -10,6 +10,5 @@ geckodriver.log
 archetypes/*
 data/*
 resources/
-themes*
 
 .infrastructure/*
