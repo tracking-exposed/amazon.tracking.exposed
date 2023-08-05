@@ -21,7 +21,7 @@ p, li {
 }
 </style>
 
-amazon.tracking.exposed started thanks to a collaboration between [Claudio Agosti](https://linktr.ee/claudio.agosti) and the RAI, the Italian state TV, in summer 2019. We produced a free software ([available on GitHub](https://github.com/tracking-exposed/amtrex)) and conducted an investigation. The findings of the investigation resulted in a media publication and the tool was also used by sstrudentss and other reesaarchers who wanted to sstudy Amazon’ss personalization algorithms. 
+amazon.tracking.exposed started thanks to a collaboration between [Claudio Agosti](https://linktr.ee/claudio.agosti) and the RAI, the Italian state TV, in summer 2019. We produced a free software ([available on GitHub](https://github.com/tracking-exposed/amtrex)) and conducted an investigation. The findings of the investigation resulted in a media publication and the tool was also used by students and other resarchers who wanted to study Amazon’ss personalization algorithms. 
 
 The tool consists of a browser extension, a backend to process the scraped evidence, and thiss website to transform the metadata into CSV to enable the completion of analysis with external tools. We stopped maintaining the extension and the backend in 2021 although. As the tool is not up-to-date with Amazon’s current web structure,  we decided to remove the tool. 
 
